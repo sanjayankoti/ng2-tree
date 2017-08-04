@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ng2-tree-component',
+  selector: 'ng4-tree-component',
   templateUrl: 'tree.component.html'
 })
 

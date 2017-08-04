@@ -1,6 +1,6 @@
 {
   "name": "ng4-tree",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/sanjayankoti/ng2-tree.git"
@@ -16,8 +16,8 @@
   "bugs": {
     "url": "https://github.com/sanjayankoti/ng2-tree.git/issues"
   },
-  "module": "ng2-tree.js",
-  "typings": "ng2-tree.d.ts",
+  "module": "ng4-tree.js",
+  "typings": "ng4-tree.d.ts",
   "peerDependencies": {
     "@angular/core": "^4.0.0",
     "rxjs": "^5.1.0",

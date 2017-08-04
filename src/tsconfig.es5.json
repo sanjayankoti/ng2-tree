@@ -21,8 +21,8 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
-    "flatModuleOutFile": "ng2-tree.js",
-    "flatModuleId": "ng2-tree"
+    "flatModuleOutFile": "ng4-tree.js",
+    "flatModuleId": "ng4-tree"
   },
   "files": [
     "./index.ts"

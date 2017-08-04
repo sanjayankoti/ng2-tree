@@ -1,11 +1,11 @@
-# ng2-tree
+# ng4-tree
 
 ## Installation
 
 To install this library, run:
 
 ```bash
-$ npm install ng2-tree --save
+$ npm install ng4-tree --save
 ```
 
 ## Consuming your library
@@ -13,7 +13,7 @@ $ npm install ng2-tree --save
 Once you have published your library to npm, you can import your library in any Angular application by running:
 
 ```bash
-$ npm install ng2-tree
+$ npm install ng4-tree
 ```
 
 and then from your Angular `AppModule`:
@@ -25,7 +25,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { Ng2TreeModule } from 'ng2-tree';
+import { Ng4TreeModule } from 'ng2-tree';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { Ng2TreeModule } from 'ng2-tree';
     BrowserModule,
 
     // Specify your library as an import
-    LibraryModule
+    Ng4TreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -43,14 +43,14 @@ import { Ng2TreeModule } from 'ng2-tree';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Once your library is imported, you can use it as a component in your Angular application:
 
 ```xml
 <!-- You can now use your library component in app.component.html -->
 <h1>
   {{title}}
 </h1>
-<ng2-tree-component></ng2-tree-component>
+<ng4-tree-component></ng4-tree-component>
 ```
 
 ## License

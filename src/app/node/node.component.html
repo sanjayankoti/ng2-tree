@@ -2,12 +2,12 @@
     {{item.name}}
     <ul *ngIf="item.locations">
         <ng-template ngFor let-locationitem [ngForOf]="item.locations">
-            <tree-node [item]="locationitem" [type]="'location'"></tree-node>
+            <node-component [item]="locationitem" [type]="'location'"></node-component>
         </ng-template>
     </ul>
     <ul *ngIf="item.subs">
         <ng-template ngFor let-subitem [ngForOf]="item.subs">
-            <tree-node [item]="subitem" [type]="'group'"></tree-node>
+            <node-component [item]="subitem" [type]="'group'"></node-component>
         </ng-template>
     </ul>
 </li>

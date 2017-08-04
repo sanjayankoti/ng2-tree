@@ -20,10 +20,10 @@ export * from './app/node/node.component';
   ]
 })
 
-export class Ng2TreeModule {
+export class Ng4TreeModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: Ng2TreeModule,
+      ngModule: Ng4TreeModule,
     };
   }
 }
