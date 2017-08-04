@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'node-component',
@@ -8,10 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
 export class NodeComponent implements OnInit {
     @Input() item: any;
     @Input() type: any;
+    @Output() click = new EventEmitter<any>();
     isExpanded: Boolean = false;
 
     ngOnInit() {
         // console.log(this.item);
+    }
+
+    itemClick(item: any) {
+        this.click.emit({ item: this.item });
     }
 
     toggle() {

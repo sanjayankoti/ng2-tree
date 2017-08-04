@@ -1,4 +1,4 @@
-<li [style.list-style-image]="type == 'location' ? 'url(assets/location.png)' : 'url(assets/group.png)'">
+<li [style.list-style-image]="type == 'location' ? 'url(https://github.com/sanjayankoti/ng2-tree/blob/master/src/assets/group.png)' : 'url(https://github.com/sanjayankoti/ng2-tree/blob/master/src/assets/location.png)'" (click)="itemClick(item)">
     {{item.name}}
     <ul *ngIf="item.locations">
         <ng-template ngFor let-locationitem [ngForOf]="item.locations">
