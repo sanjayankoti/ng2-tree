@@ -1,0 +1,13 @@
+<li [style.list-style-image]="type == 'location' ? 'url(assets/location.png)' : 'url(assets/group.png)'">
+    {{item.name}}
+    <ul *ngIf="item.locations">
+        <ng-template ngFor let-locationitem [ngForOf]="item.locations">
+            <tree-node [item]="locationitem" [type]="'location'"></tree-node>
+        </ng-template>
+    </ul>
+    <ul *ngIf="item.subs">
+        <ng-template ngFor let-subitem [ngForOf]="item.subs">
+            <tree-node [item]="subitem" [type]="'group'"></tree-node>
+        </ng-template>
+    </ul>
+</li>
