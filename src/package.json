@@ -3,7 +3,7 @@
   "version": "0.4.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanjayankoti/ng2-tree.git"
+    "url": "https://github.com/sanjayankoti/ng4-tree.git"
   },
   "author": {
     "name": "Sanjay Kumar Singh",
@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sanjayankoti/ng2-tree.git/issues"
+    "url": "https://github.com/sanjayankoti/ng4-tree.git/issues"
   },
   "module": "ng4-tree.js",
   "typings": "ng4-tree.d.ts",

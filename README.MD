@@ -25,7 +25,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { Ng4TreeModule } from 'ng2-tree';
+import { Ng4TreeModule } from 'ng4-tree';
 
 @NgModule({
   declarations: [
@@ -50,7 +50,7 @@ Once your library is imported, you can use it as a component in your Angular app
 <h1>
   {{title}}
 </h1>
-<ng4-tree-component></ng4-tree-component>
+<ng4-tree-component [data]="locationGrouplist" (click)="showLocations($event.locationGroupID, 0)"></ng4-tree-component>
 ```
 
 ## License

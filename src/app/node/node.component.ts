@@ -1,22 +1,25 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { TreeDataService } from './../shared/tree-data.service';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
     selector: 'node-component',
     templateUrl: './node.component.html',
+    styleUrls: ['./node.component.css']
 })
 
 export class NodeComponent implements OnInit {
     @Input() item: any;
     @Input() type: any;
-    @Output() click = new EventEmitter<any>();
     isExpanded: Boolean = false;
 
-    ngOnInit() {
-        // console.log(this.item);
-    }
+    constructor(private treeDataService: TreeDataService) { }
 
-    itemClick(item: any) {
-        this.click.emit({ item: this.item });
+    ngOnInit() { }
+
+    itemClick(event) {
+        console.log('SELECTED NODE ITEM', this.item);
+        this.treeDataService.setNodeItem(this.item);
+        this.toggle();
     }
 
     toggle() {

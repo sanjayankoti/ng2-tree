@@ -1,7 +1,7 @@
 {
   "generator-angular2-library": {
     "promptValues": {
-      "gitRepositoryUrl": "https://github.com/sanjayankoti/ng2-tree.git"
+      "gitRepositoryUrl": "https://github.com/sanjayankoti/ng4-tree.git"
     }
   }
 }

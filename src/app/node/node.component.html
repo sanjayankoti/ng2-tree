@@ -1,11 +1,22 @@
-<li [style.list-style-image]="type == 'location' ? 'url(https://github.com/sanjayankoti/ng2-tree/blob/master/src/assets/group.png)' : 'url(https://github.com/sanjayankoti/ng2-tree/blob/master/src/assets/location.png)'" (click)="itemClick(item)">
-    {{item.name}}
-    <ul *ngIf="item.locations">
-        <ng-template ngFor let-locationitem [ngForOf]="item.locations">
-            <node-component [item]="locationitem" [type]="'location'"></node-component>
-        </ng-template>
-    </ul>
-    <ul *ngIf="item.subs">
+<!-- [style.list-style-image]="type == 'location' ? 'url(assets/group.png)' : 'url(assets/location.png)'" -->
+<li (click)="itemClick($event)">
+    <i [ngClass]="type == 'location' ? 'fa fa-map-marker' : 'fa fa-users'" aria-hidden="true"></i>&nbsp;&nbsp;{{item.name}}
+    <div class="icon-align" *ngIf="type == 'group' && item.locations.length > 0">
+        <i [ngClass]="isExpanded ? 'fa fa-angle-down' : 'fa fa-angle-right'" aria-hidden="true" (click)="toggle()"></i>
+    </div>
+    <div class="icon-align" *ngIf="item.parentGroup == null && item.name == 'All Groups'">
+        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+        <i class="fa fa-pencil" aria-hidden="true"></i>
+        <i class="fa fa-trash" aria-hidden="true"></i>
+    </div>
+    <div *ngIf="isExpanded || (item.parentGroup == null && item.name == 'All Groups')">
+        <ul *ngIf="item.locations" (click)="$event.stopPropagation()">
+            <ng-template ngFor let-locationitem [ngForOf]="item.locations">
+                <node-component [item]="locationitem" [type]="'location'"></node-component>
+            </ng-template>
+        </ul>
+    </div>
+    <ul *ngIf="item.subs" (click)="$event.stopPropagation()">
         <ng-template ngFor let-subitem [ngForOf]="item.subs">
             <node-component [item]="subitem" [type]="'group'"></node-component>
         </ng-template>

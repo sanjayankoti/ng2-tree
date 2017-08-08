@@ -2,6 +2,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TreeComponent } from './app/tree/tree.component';
 import { NodeComponent } from './app/node/node.component';
+import { TreeDataService } from './app/shared/tree-data.service';
 
 export * from './app/tree/tree.component';
 export * from './app/node/node.component';
@@ -13,6 +14,9 @@ export * from './app/node/node.component';
   declarations: [
     TreeComponent,
     NodeComponent
+  ],
+  providers: [
+    TreeDataService
   ],
   exports: [
     TreeComponent,

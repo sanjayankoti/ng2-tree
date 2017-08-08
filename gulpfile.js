@@ -131,7 +131,7 @@ gulp.task('rollup:umd', function () {
       // The name to use for the module for UMD/IIFE bundles
       // (required for bundles with exports)
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#modulename
-      moduleName: 'ng2-tree',
+      moduleName: 'ng4-tree',
 
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#globals
       globals: {
@@ -139,7 +139,7 @@ gulp.task('rollup:umd', function () {
       }
 
     }))
-    .pipe(rename('ng2-tree.umd.js'))
+    .pipe(rename('ng4-tree.umd.js'))
     .pipe(gulp.dest(distFolder));
 });
 

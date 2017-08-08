@@ -5,7 +5,7 @@
     "build": "gulp build",
     "build:watch": "gulp",
     "docs": "npm run docs:build",
-    "docs:build": "compodoc -p tsconfig.json -n ng2-tree -d docs --hideGenerator",
+    "docs:build": "compodoc -p tsconfig.json -n ng4-tree -d docs --hideGenerator",
     "docs:serve": "npm run docs:build -- -s",
     "docs:watch": "npm run docs:build -- -s -w",
     "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanjayankoti/ng2-tree.git"
+    "url": "https://github.com/sanjayankoti/ng4-tree.git"
   },
   "author": {
     "name": "Sanjay Kumar Singh",
@@ -24,7 +24,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sanjayankoti/ng2-tree.git/issues"
+    "url": "https://github.com/sanjayankoti/ng4-tree.git/issues"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",
@@ -60,7 +60,8 @@
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
     "typescript": "~2.2.0",
-    "zone.js": "^0.8.4"
+    "zone.js": "^0.8.4",
+    "font-awesome": "^4.7.0"
   },
   "engines": {
     "node": ">=6.0.0"
