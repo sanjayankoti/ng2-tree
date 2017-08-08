@@ -1,6 +1,6 @@
 {
   "name": "ng4-tree",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "scripts": {
     "build": "gulp build",
     "build:watch": "gulp",
@@ -20,7 +20,10 @@
     "email": "as4flex@gmail.com"
   },
   "keywords": [
-    "angular"
+    "angular",
+    "ng4-tree",
+    "tree",
+    "sanjay"
   ],
   "license": "MIT",
   "bugs": {

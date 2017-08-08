@@ -1,6 +1,6 @@
 {
   "name": "ng4-tree",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/sanjayankoti/ng4-tree.git"
@@ -10,7 +10,10 @@
     "email": "as4flex@gmail.com"
   },
   "keywords": [
-    "angular"
+    "angular",
+    "ng4-tree",
+    "tree",
+    "sanjay"
   ],
   "license": "MIT",
   "bugs": {
